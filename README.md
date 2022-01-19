@@ -20,4 +20,7 @@ The ```analyze_instance.lp``` encoding provides some information about the insta
 * amount of goals
 * percentage of driveable spaces (amount of activated nodes / total grid-size) in the range of (0..100)
 * optimal single agent plan lengths and with them:
-    - aaa
+  - the longest OSAP
+  - ~the shortest OSAP~
+  - ~median~
+  - ~the average connectivity of nodes along the paths~

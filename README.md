@@ -26,6 +26,8 @@ The ```analyze_instance.lp``` encoding provides some information about the insta
   - ~the amount of times a node is crossed along all OSAPs~
 
 These metrics may come in handy when it comes to evaluating decomposition and ordering strategies as it (hopefully) gives insights on when and why strategies work/don't work well. \
+\
 POSSIBLE OBSERVATION (needs to be researched): 
 > THESIS: In maze-like structures the OSAP-length may better represent the actual path length needed than the Manhattan-Distance. 
+
 Although this should be the case in all scenarios (bold-statement), in open structures and warehouse-scenarios this may become less relevant: In a completely empty grid, the OSAP is equal to the Manhattan-Distance. Thus it makes sense that the Manhattan-Distance gives better results the more open a space is. The attributes ```percentage_driveable``` and ```avrg_connectivity_along_osap``` may give a deeper understanding.

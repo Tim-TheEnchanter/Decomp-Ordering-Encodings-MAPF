@@ -11,4 +11,13 @@ To illustrate the usage of these encodings here an examplary workflow:
 or  \
 ```clingo get_osap_length.lp instance.lp -c horizon=20 --outf=1 > output.lp``` respectively. \
 \
+As of now these calls will not directly return a statement that looks like the desired output but rather the statements: ```manhattan_distance(R,L)``` or ```osap_length(R,L)``` where R and L are of course the robot identifier and the respective length. A conversion then is as easy as pie.
 
+---
+
+The ```analyze_instance.lp``` encoding provides some information about the instance that is to be solved. As of now the following attributes are extracted:
+* amount of robots
+* amount of goals
+* percentage of driveable spaces (amount of activated nodes / total grid-size) in the range of (0..100)
+* optimal single agent plan lengths and with them:
+    - aaa

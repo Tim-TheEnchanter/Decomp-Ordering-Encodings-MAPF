@@ -15,7 +15,7 @@ As of now these calls will not directly return a statement that looks like the d
 
 ---
 
-The ```analyze_instance.lp``` encoding provides some information about the instance that is to be solved. As of now the following attributes are extracted:
+The ```analyze_instance.lp``` encoding provides some information about the instance that is to be solved. As of now the following attributes are extracted: (crossed points are not yet implemented but very much planned)
 * amount of robots
 * amount of goals
 * percentage of driveable spaces (amount of activated nodes / total grid-size) in the range of (0..100)

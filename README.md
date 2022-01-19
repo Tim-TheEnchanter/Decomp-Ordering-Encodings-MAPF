@@ -3,7 +3,7 @@ This repo will include the encodings -- written or altered by me -- that I inten
 
 ---
 The file ```action-m.lp``` is an extended version of the **ASPRILO** encoding which uses heuristical values to support the pathfinding process. \
-For that an input of the form ```priority(R,P)``` is needed, where ```P``` is a priority-score for robot ```R```. To obtain this score, I wrote (this far) two encodings which will calculate the score. One is based on the *Manhattan-Distance*, while the other first calculates the *optimal single-agent plan (OSAP)* and returns its *length*. An exemplary call could look like this: \
+For that an input of the form ```priority(R,P)``` is needed, where ```P``` is a priority-score for robot ```R```. To obtain this score, I wrote (this far) two encodings which will calculate the score. One is based on the *Manhattan-Distance*, while the other first calculates the *optimal single-agent plan (OSAP)* and then returns its *length*. An exemplary call could look like this: \
 \
 ```clingo get_manhattan_distance.lp instance.lp --outf=1 > output.lp``` \
 or  \
@@ -22,3 +22,4 @@ The ```analyze_instance.lp``` encoding provides some information about the insta
   - ~the shortest OSAP~
   - ~median~
   - ~the average connectivity of nodes along the paths~
+  - ~the amount of times a node is crossed along all OSAPs~

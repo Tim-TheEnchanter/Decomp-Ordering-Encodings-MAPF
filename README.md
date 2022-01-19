@@ -4,4 +4,4 @@ This repo will include the encodings -- written or altered by me -- that I inten
 
 To illustrate the usage of these encodings here an examplary workflow:
 
-  The file '''action-m.lp''' is an extended version of the **ASPRILO** encoding which uses heuristical values to support the pathfinding process. For that an input of the form: '''priority(R,P)''' where P is a priority-score for robot R.
+  The file ```action-m.lp``` is an extended version of the **ASPRILO** encoding which uses heuristical values to support the pathfinding process. For that an input of the form: ```priority(R,P)``` where P is a priority-score for robot R.

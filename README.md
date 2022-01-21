@@ -20,7 +20,7 @@ The ```analyze_instance.lp``` encoding provides some information about the insta
 * optimal single agent plan lengths and with them:
   - length of the longest OSAP
   - ~length of the shortest OSAP~
-  - ~mean length~
+  - mean length
   - ~median~
   - ~the average connectivity of nodes along the paths~
   - ~the amount of times a node is crossed along all OSAPs~

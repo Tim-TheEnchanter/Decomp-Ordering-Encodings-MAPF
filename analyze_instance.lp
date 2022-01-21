@@ -30,8 +30,10 @@ percentage_driveable(P) :- P = C * 100 / N, number_nodes(C), total_nodes(N).
 
 #include "./get_osap_length.lp".
 
-max_osap_length(L)  :- L = #max{  T: osap_length(R,T)}.
+max_osap_length(L)  :- L = #max{  T: osap_length(R,T)   }.
 %min_osap_length(L)  :- L = #min{  T: osap_length(R,T)}.
+mean_osap_length(L) :- L = S/N, S = #sum{  T: osap_length(R,T)   } , number_robots(N).
+
 
 #show number_robots/1.
 #show number_goals/1.
@@ -41,3 +43,4 @@ max_osap_length(L)  :- L = #max{  T: osap_length(R,T)}.
 #show osap_length/2.
 #show max_osap_length/1.
 #show min_osap_length/1.
+#show mean_osap_length/1.

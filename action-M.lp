@@ -1,9 +1,9 @@
-#include "../input.lp".
+#include "./input-Md.lp".
 
 %#const horizon=20.
 time(1..horizon).
 
-#heuristic move(R,D,T): direction(D),time(T),priority(R,P). [P,Level]
+#heuristic move(R,D,T): direction(D),time(T),priority(R,P). [P,level]
 
 direction((X,Y)) :- X=-1..1, Y=-1..1, |X+Y|=1.
 nextto((X,Y),(X',Y'),(X+X',Y+Y')) :- position((X,Y)), direction((X',Y')), position((X+X',Y+Y')).

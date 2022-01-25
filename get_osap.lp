@@ -1,7 +1,7 @@
 % definition of all directions
 dir(1,0). dir(-1,0). dir(0,1). dir(0,-1). dir(0,0).
 
-goal(S,X,Y) :- init(object(shelf,S), value(at,(X,Y))).
+goal(S,X,Y) :- init(object(destination,S), value(at,(X,Y))).
 robot(R)    :- init(object(robot,R), _).
 
 % define nodes

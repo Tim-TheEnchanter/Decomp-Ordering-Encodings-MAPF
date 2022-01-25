@@ -8,7 +8,7 @@
 % give information about amount of robots and goals
 
 robot(R)    :- init(object(robot,R), value(at,(_,_))).
-goal(S,X,Y) :- init(object(shelf,S), value(at,(X,Y))).
+goal(S,X,Y) :- init(object(destination,S), value(at,(X,Y))).
 
 number_robots(N)  :- N = #count{  R: robot(R)     }.
 number_goals(N)   :- N = #count{  S: goal(S,_,_)  }.
